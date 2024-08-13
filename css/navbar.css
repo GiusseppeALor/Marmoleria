@@ -28,3 +28,20 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.2em;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+}
