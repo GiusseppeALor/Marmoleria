@@ -13,18 +13,6 @@ body {
     padding: 20px;
 }
 
-header {
-    background-color: #344E41;
-    color: #DAD7CD;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
 .hero {
     background-color: #3A5A40;
     color: #DAD7CD;

@@ -1,3 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #344E41;
+    background-color: #DAD7CD;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
