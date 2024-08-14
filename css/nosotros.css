@@ -1,7 +1,7 @@
 /* Sobre nosotros */
 #sobre-nosotros {
     background-color: #DAD7CD;
-    color:  #d8f3dc;
+    color: #000000;
     padding: 60px 0;
     text-align: left;
     overflow: hidden;
@@ -10,24 +10,28 @@
 
 .contenido {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
 }
 
 .texto {
-    width: 50%;
-    padding-right: 30px;
+    width: 100%;
+    padding: 0 30px;
     animation: slide-in-left 1.2s ease-out;
+    text-align: center;
 }
 
 .imagen {
-    width: 45%;
+    width: 100%;
+    margin-top: 20px;
     animation: slide-in-right 1.2s ease-out;
 }
 
 .imagen img {
     width: 100%;
+    max-width: 400px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -58,22 +62,10 @@
 }
 
 .tnostros {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #000000;
     margin-bottom: 20px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
 }
 
 .pnosotros {
@@ -81,4 +73,32 @@ ul li {
     line-height: 1.8;
     margin-bottom: 20px;
     color: #000000;
+}
+
+.lnostros {
+    list-style: none;
+    padding: 0;
+}
+
+.lnostros-item {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        flex-direction: row;
+    }
+
+    .texto {
+        width: 50%;
+        text-align: left;
+    }
+
+    .imagen {
+        width: 45%;
+        margin-top: 0;
+    }
 }
