@@ -50,6 +50,10 @@ footer {
     margin: 0 10px;
 }
 
+.footer-column i:hover{
+    color: aquamarine;
+}
+
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
