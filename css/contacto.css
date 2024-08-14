@@ -1,0 +1,86 @@
+.contacto {
+    background-color: #1b4332;
+    color: #d8f3dc;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacto-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contacto-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-whatsapp {
+    background-color: #52b788;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: #d8f3dc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background-color: #40916c;
+}
+
+.btn-whatsapp i {
+    margin-right: 0.5rem;
+}
+
+.map-container {
+    margin-top: 20px;
+    border: 2px solid #081c15;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contacto-title {
+        font-size: 2rem;
+    }
+
+    .contacto-description {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-whatsapp {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+
+    .contacto p {
+        font-size: 0.9em;
+    }
+}
+

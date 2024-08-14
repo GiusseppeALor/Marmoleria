@@ -1,0 +1,84 @@
+/* Sobre nosotros */
+#sobre-nosotros {
+    background-color: #DAD7CD;
+    color:  #d8f3dc;
+    padding: 60px 0;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.texto {
+    width: 50%;
+    padding-right: 30px;
+    animation: slide-in-left 1.2s ease-out;
+}
+
+.imagen {
+    width: 45%;
+    animation: slide-in-right 1.2s ease-out;
+}
+
+.imagen img {
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slide-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tnostros {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.pnosotros {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000000;
+}
