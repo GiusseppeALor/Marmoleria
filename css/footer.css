@@ -1,121 +1,77 @@
-/*footer {
-    background-color: #344E41;
-    color: #DAD7CD;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 20px;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-footer .container {
+footer {
+    background-color: #2e553e; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
-.map-container {
-    margin-top: 20px;
-    border: 2px solid #081c15;
-    border-radius: 8px;
-    overflow: hidden;
+.footer-column {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 10px;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-}
-
- Estilos responsivos 
-@media (max-width: 768px) {
-    footer {
-        padding: 15px 0;
-    }
-
-    .map-container iframe {
-        height: 200px;
-    }
-
-    footer p {
-        font-size: 0.9em;
-    }
-}
-*/
-.pie-pagina{
-    width: 100%;
-    background-color: #344E41;
-}
-
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0;
-}
-
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img{
-    width: 175px;
-}
-
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box h3{
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.pie-pagina .grupo-1 .box ul{
-    color: #fff;
-    margin-bottom: 5px;
-}
-
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
+.footer-column h2 {
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #ffffff; 
     text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #A1DCC3;
-    text-align: center;
-    transition: all 300ms ease;
-    border-radius: 10px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: #87C698;
+.footer-column a:hover {
+    text-decoration: underline;
 }
 
-.pie-pagina .grupo-2{
-    background-color: #344E41;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+.footer-column i {
+    font-size: 1.5em;
+    margin: 0 10px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0;
+
+.footer-column i:hover{
+    color:black
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
     }
 }
